@@ -4,9 +4,9 @@ import project3 from "../assets/hostel.png";
 import project4 from "../assets/student.png";
 import project5 from "../assets/shop.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am an enthusiastic full stack developer with a strong foundation in Java, Spring Boot, MySQL, MongoDB, React, and React Native. Although I am just starting my professional journey, I am eager to apply my knowledge to build dynamic and user-friendly web and mobile applications. My passion for technology drives me to continuously learn and innovate, and I am excited to leverage my skills to develop solutions that create impactful user experiences and contribute to business success.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `My name is Rayan Cooray, and I am a dedicated full stack developer with a passion for building robust and innovative applications. With expertise in both front-end and back-end technologies, I strive to create seamless and efficient user experiences. My commitment to my work drives me to constantly learn and grow, ensuring that I stay at the forefront of technology trends. I am eager to tackle new challenges and contribute to impactful projects that make a difference.`;
 
 export const EDUCATION = [
   {
@@ -21,14 +21,14 @@ export const EDUCATION = [
     role: "GCE ORDINARY LEVEL",
     company: "Princes International School",
     description: `Completed major barriers in mylife G.C.E Ordinary Level Examination in Princese International School in 2021.With Covid 19 pandemic,It was so difficult for me to study. I was also very interested in my studies.`,
-    subjects: ["Maths","Science","English","Social Studies","Computer Science"],
+    subjects: ["Maths","Science","English","Social Studies"],
   },
   {
     year: "2011-2019",
     role: "Primary Education",
     company: "Holy Cross College Kalutara",
     description: `Started my Education journey in Holy Cross College Kalutara.This led for my very first mindset for enterpreneurship.However due to lack of teachers i had to change the collage to a International one.`,
-    subjects: ["English","Maths","Science","Social Studies","Computer Science"],
+    subjects: ["English","Maths","Environmental Studies"],
   },
 ];
 
