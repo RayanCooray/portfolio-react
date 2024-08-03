@@ -38,7 +38,7 @@ export const PROJECTS = [
     image: project5,
     description:
       "A Management System for Shoe Shop, with features such as product management, inventory management, and order management.",
-    technologies: [ "Spring Boot", "Hibernate", "mySQL", "HTML", "CSS", "JAVASCRIPT", "JQUERY"],
+    technologies: [ "SpringBoot", "Hibernate", "mySQL", "HTML", "CSS", "JS", "JQUERY"],
   },
   {
     title: "Chat Room App", 
