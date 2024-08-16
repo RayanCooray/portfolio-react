@@ -6,7 +6,7 @@ import project5 from "../assets/shop.jpg";
 
 // export const HERO_CONTENT = `I am an enthusiastic full stack developer with a strong foundation in Java, Spring Boot, MySQL, MongoDB, React, and React Native. Although I am just starting my professional journey, I am eager to apply my knowledge to build dynamic and user-friendly web and mobile applications. My passion for technology drives me to continuously learn and innovate, and I am excited to leverage my skills to develop solutions that create impactful user experiences and contribute to business success.`;
 
-export const HERO_CONTENT = `I am an enthusiastic full stack developer with a strong foundation in Java, Spring Boot, MySQL, MongoDB, React, and React Native. Although I am just starting my professional journey, I am eager to apply my knowledge to build dynamic and user-friendly web and mobile applications.`;
+export const HERO_CONTENT = `I am an enthusiastic Back-End developer with a strong foundation in Java, Spring Boot, MySQL, MongoDB, React, and React Native. Although I am just starting my professional journey, I am eager to apply my knowledge to build dynamic and user-friendly web and mobile applications.`;
 
 export const ABOUT_TEXT = `My name is Rayan Cooray, and I am a dedicated full stack developer with a passion for building robust and innovative applications. With expertise in both front-end and back-end technologies, I strive to create seamless and efficient user experiences. My commitment to my work drives me to constantly learn and grow, ensuring that I stay at the forefront of technology trends. I am eager to tackle new challenges and contribute to impactful projects that make a difference.`;
 
