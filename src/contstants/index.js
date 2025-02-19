@@ -4,6 +4,24 @@ import project3 from "../assets/hostel.png";
 import project4 from "../assets/student.png";
 import project5 from "../assets/shop.jpg";
 
+export const EXPERIENCE = [
+  {
+    year: "6 Months",
+    role: "Intern Software Engineer",
+    company: "Biz Software Solutions",
+    description: "Worked on web application development, optimizing backend processes, and improving frontend user experience.",
+    skills: ["React.js","Next.js", "ANT","Node.js", "MongoDB", "Express.js"]
+  },
+  {
+    year: "1 Year",
+    role: "Freelance Developer",
+    company: "Codevent LK",
+    description: "Built scalable web solutions for startups, developed interactive UI components, and managed deployments.",
+    skills: ["Next.js","Shadcn UI","Express Js","MongoDB", "Firebase", "Tailwind CSS"]
+  }
+];
+
+
 // export const HERO_CONTENT = `I am an enthusiastic full stack developer with a strong foundation in Java, Spring Boot, MySQL, MongoDB, React, and React Native. Although I am just starting my professional journey, I am eager to apply my knowledge to build dynamic and user-friendly web and mobile applications. My passion for technology drives me to continuously learn and innovate, and I am excited to leverage my skills to develop solutions that create impactful user experiences and contribute to business success.`;
 
 export const HERO_CONTENT = `I am an enthusiastic Full-Stack developer with a strong foundation in Java, Spring Boot, MySQL, MongoDB, React, and React Native. With six months of internship experience at BIZ Software Solutions, I have gained hands-on expertise in building and optimizing web applications. Although I am just starting my professional journey, I am eager to apply my knowledge to develop dynamic and user-friendly web and mobile applications.`;

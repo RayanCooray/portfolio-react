@@ -6,6 +6,7 @@ import Tecnologies from './components/Tecnologies'
 import Education from './components/Education'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Experience from './components/Experience'
 const App = () => {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased
@@ -20,6 +21,7 @@ const App = () => {
        <About />
        <Tecnologies/>
        <Education/>
+       <Experience />
        <Projects/>
        <Contact/>
        </div>
