@@ -1,8 +1,10 @@
-import project1 from "../assets/Codechat.jpg";
 import project2 from "../assets/connect.jpg";
 import project3 from "../assets/hostel.png";
-import project4 from "../assets/student.png";
 import project5 from "../assets/shop.jpg";
+import project6 from "../assets/lib.png";
+import project7 from "../assets/prim.png";
+import project8 from "../assets/bank.png";
+import project9 from "../assets/iphone.png";
 
 export const EXPERIENCE = [
   {
@@ -21,8 +23,6 @@ export const EXPERIENCE = [
   }
 ];
 
-
-// export const HERO_CONTENT = `I am an enthusiastic full stack developer with a strong foundation in Java, Spring Boot, MySQL, MongoDB, React, and React Native. Although I am just starting my professional journey, I am eager to apply my knowledge to build dynamic and user-friendly web and mobile applications. My passion for technology drives me to continuously learn and innovate, and I am excited to leverage my skills to develop solutions that create impactful user experiences and contribute to business success.`;
 
 export const HERO_CONTENT = `I am an enthusiastic Full-Stack developer with a strong foundation in Java, Spring Boot, MySQL, MongoDB, React, and React Native. With six months of internship experience at BIZ Software Solutions, I have gained hands-on expertise in building and optimizing web applications. Although I am just starting my professional journey, I am eager to apply my knowledge to develop dynamic and user-friendly web and mobile applications.`;
 
@@ -52,7 +52,36 @@ export const EDUCATION = [
   },
 ];
 
-export const PROJECTS = [
+
+export const PROJECTS = [ 
+  {
+    title: "iPhone 15 Pro Max Clone Website",
+    image: project9,
+    description:
+      "A visually stunning clone of the iPhone 15 Pro Max website, built using React, Framer Motion, and Tailwind CSS for smooth animations and a modern UI.",
+    technologies: ["React", "Framer Motion", "TailwindCSS"],
+  },
+  {
+    title: "Horizon – Financial SaaS Platform",
+    image: project8,
+    description:
+      "A financial SaaS platform that connects to multiple bank accounts, displays real-time transactions, enables fund transfers between users, and provides financial management tools.",
+    technologies: ["Next.js", "TypeScript", "Appwrite", "Plaid", "Dwolla", "React Hook Form", "Zod", "TailwindCSS", "Chart.js", "ShadCN"],
+  },
+  {
+    title: "PrimeMobile",
+    image: project7,
+    description:
+      "A modern phone shop made using Next.js, Tailwind, NextAuth, and Express.js for the backend.",
+    technologies: ["Next.js", "TailwindCSS", "NextAuth", "Express.js", "Axios"],
+  },
+  {
+    title: "Library Sage",
+    image: project6,
+    description:
+      "A production-grade University Library Management System featuring a public-facing app and an admin interface. It offers book borrowing with reminders, robust user management, automated workflows, and an optimized tech stack for scalability.",
+    technologies: ["Next.js", "PostgreSQL", "Upstash", "ImageKit", "TypeScript", "Resend", "TailwindCSS"],
+  },
   {
     title: "Shoe Shop Management System",
     image: project5,
@@ -61,17 +90,10 @@ export const PROJECTS = [
     technologies: [ "SpringBoot", "Hibernate", "mySQL", "HTML", "CSS", "JS", "JQUERY"],
   },
   {
-    title: "Chat Room App", 
-    image: project1,
-    description:
-      "A fully functional chat room app using socket programming with Java.",
-    technologies: ["JAVA", "INP", "SOCKET"],
-  },
-  {
     title: "Connect 4 Game with Min Max Ai",
     image: project2,
     description:
-      "Using OOP Concepts, I created a Connect 4 Game with Min Max Ai.with Monto Carlo Tree Search Algorithm.",
+      "Using OOP Concepts, I created a Connect 4 Game with Min Max Ai with Monte Carlo Tree Search Algorithm.",
     technologies: ["JAVA", "OOP", "JAVAFX", "MYSQL"],
   },
   {
@@ -81,14 +103,8 @@ export const PROJECTS = [
       "A Hostel Management System, with features such as room booking, room management, and room reservation.",
     technologies: ["JAVA", "CSS", "JAVAFX", "HIBERNATE", "MYSQL"],
   },
-  {
-    title: "Student Management System",
-    image: project4,
-    description:
-      "A Student Management System, with features such as student registration, student management, and student attendance.",
-    technologies: ["JAVA", "CSS", "JAVAFX", "MySQL"],
-  },
 ];
+
 
 export const CONTACT = {
   address: "30/9 Fonseka Place,Kalutara North",
