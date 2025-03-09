@@ -33,10 +33,11 @@ const Education = () => {
                     </span>
                 </h6>
                 <p className='mb-4 text-neutral-400'>{education.description}</p>
+                <div className='flex flex-wrap gap-3'>
                 {education.subjects.map((subject, index) => (
-                    <span key={index} className='mr-2 mt-4 rounded bg-neutral-900 px-2
-                    py-1 text-sm font-medium text-purple-800'>{subject}</span>
+                    <span key={index} className='rounded bg-neutral-900 px-3 py-2 text-sm font-medium text-gray-50'>{subject}</span>
                 ))}
+                </div>
               </motion.div>
             </div>
         ))}
