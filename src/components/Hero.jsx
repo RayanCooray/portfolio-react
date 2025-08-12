@@ -1,4 +1,4 @@
-import React from "react";
+
 import profilePic from "../assets/DSC01203.jpg";
 import { HERO_CONTENT } from "../contstants";
 import { motion } from "framer-motion";

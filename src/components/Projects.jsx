@@ -1,4 +1,4 @@
-import React from "react";
+
 import { PROJECTS } from "../contstants";
 import { motion } from "framer-motion";
 
