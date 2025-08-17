@@ -8,18 +8,36 @@ import project9 from "../assets/iphone.png";
 
 export const EXPERIENCE = [
   {
-    year: "6 Months",
-    role: "Intern Software Engineer",
-    company: "Biz Software Solutions",
-    description: "Worked on web application development, optimizing backend processes, and improving frontend user experience.",
-    skills: ["React.js","Next.js", "ANT","Node.js", "MongoDB", "Express.js"]
+    year: "Jun 2025 - Present",
+    role: "Associate Full Stack Software Engineer (Part-Time)",
+    company: "Biz Software Solutions Pvt Ltd",
+    description:
+      "Contributing to full-stack development with a focus on building scalable web applications, optimizing backend processes, and enhancing user experience across platforms.",
+    skills: ["React.js", "Next.js", "NestJS", "Express.js", "PostgreSQL", "MongoDB", "Redis", "Tailwind CSS", "ShadCN", "AWS"]
   },
   {
-    year: "1 Year",
-    role: "Freelance Developer",
-    company: "Codevent LK",
-    description: "Built scalable web solutions for startups, developed interactive UI components, and managed deployments.",
-    skills: ["Next.js","Shadcn UI","Express Js","MongoDB", "Firebase", "Tailwind CSS"]
+    year: "May 2025 - Aug 2025",
+    role: "Front-End Engineer / Intern Full Stack Engineer (Project Based)",
+    company: "Social Presence Labs Limited (SocialPresence.IO)",
+    description:
+      "Developed responsive front-end features and contributed to backend integration. Focused on React Native and Spring Boot for mobile-first solutions, and built engaging UIs with modern frameworks.",
+    skills: ["React Native", "React.js", "Spring Boot", "MongoDB", "Next.js", "TypeScript", "ShadCN", "Tailwind CSS"]
+  },
+  {
+    year: "Aug 2024 - Feb 2025",
+    role: "Trainee Associate Software Engineer",
+    company: "Biz Software Solutions Pvt Ltd",
+    description:
+      "Worked on enterprise-level solutions, backend optimizations, and database management. Collaborated with teams to deliver maintainable and high-quality code.",
+    skills: ["Node.js", "Express.js", "Java", "Spring Boot", "PostgreSQL", "NeonDB", "Redis", "Docker"]
+  },
+  {
+    year: "2023 - Present",
+    role: "Freelance Full Stack Developer",
+    company: "Self-Employed",
+    description:
+      "Delivering scalable and production-ready applications for startups and SMEs. Built full-stack platforms like DevHireX, Prime Mobiles POS, Biz POS 2.0 backend, and serverless Todo App. Specialized in clean architecture, reusable UI components, and cloud deployments.",
+    skills: ["Next.js", "TypeScript", "NestJS", "Express.js", "MongoDB", "NeonDB", "Upstash Redis", "NextAuth", "ImageKit", "React Hook Form", "Zod", "Tailwind CSS", "ShadCN", "Firebase", "CI/CD"]
   }
 ];
 
