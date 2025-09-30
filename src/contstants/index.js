@@ -8,8 +8,8 @@ import project9 from "../assets/iphone.png";
 
 export const EXPERIENCE = [
   {
-    year: "Jun 2025 - Present",
-    role: "Associate Full Stack Software Engineer (Part-Time)",
+    year: "Jun 2025 - September 2025",
+    role: "Associate Full Stack Software Engineer (Part-Time Project Contract)",
     company: "Biz Software Solutions Pvt Ltd",
     description:
       "Contributing to full-stack development with a focus on building scalable web applications, optimizing backend processes, and enhancing user experience across platforms.",
