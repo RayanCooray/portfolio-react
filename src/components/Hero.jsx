@@ -1,68 +1,108 @@
-
 import profilePic from "../assets/DSC01203.jpg";
 import { HERO_CONTENT } from "../contstants";
 import { motion } from "framer-motion";
 
-const container = (delay) => ({
-  hidden: { opacity: 0, x: -100 },
-  visible: {
-    x: 0,
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (delay = 0) => ({
     opacity: 1,
-    transition: {
-      delay: delay,
-      duration: 0.5,
-    },
-  },
-});
+    y: 0,
+    transition: { duration: 0.7, delay, ease: "easeOut" },
+  }),
+};
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-      <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
-            <motion.h1
-              variants={container(0)}
-              initial="hidden"
-              animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16
-              lg:text-8xl"
-            >
-              Rayan Cooray
-            </motion.h1>
-            <motion.span
-              variants={container(0.5)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500  to-purple-500
-              bg-clip-text text-4xl tracking-tight text-transparent"
-            >
-            Full Stack Developer
-            </motion.span>
+    <section className="min-h-screen flex items-center border-b border-neutral-900 pt-24 sm:pt-16 md:pt-20 lg:pt-24">
+      {" "}
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center lg:text-left">
             <motion.p
-              variants={container(1)}
+              variants={fadeUp}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              custom={0}
+              className="text-purple-400 font-medium tracking-widest uppercase text-sm mb-4"
+            >
+              Associate Software Engineer
+            </motion.p>
+
+            <motion.h1
+              variants={fadeUp}
+              initial="hidden"
+              animate="visible"
+              custom={0.2}
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight"
+            >
+              Hi, I’m{" "}
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+                Rayan Cooray
+              </span>
+            </motion.h1>
+
+            <motion.h2
+              variants={fadeUp}
+              initial="hidden"
+              animate="visible"
+              custom={0.4}
+              className="mt-4 text-2xl lg:text-3xl text-neutral-300 font-semibold"
+            >
+              Full Stack Developer
+            </motion.h2>
+
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              animate="visible"
+              custom={0.6}
+              className="mt-6 max-w-xl text-neutral-400 leading-relaxed"
             >
               {HERO_CONTENT}
             </motion.p>
+
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              animate="visible"
+              custom={0.8}
+              className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="#projects"
+                className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 transition font-medium shadow-lg shadow-purple-900/30"
+              >
+                View Projects
+              </a>
+              <a
+                href="#contact"
+                className="px-6 py-3 rounded-xl border border-neutral-700 hover:border-purple-500 hover:text-purple-400 transition font-medium"
+              >
+                Contact Me
+              </a>
+            </motion.div>
           </div>
-        </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
-              src={profilePic}
-              alt="Rayan Cooray Profile Pic"
-              className="h-87 w-80 rounded-2xl"
-            />
-          </div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center lg:justify-end"
+          >
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-3xl blur-2xl opacity-20"></div>
+              <div className="relative backdrop-blur-xl bg-neutral-900/40 border border-neutral-800 rounded-3xl p-3 shadow-2xl">
+                <img
+                  src={profilePic}
+                  alt="Rayan Cooray"
+                  className="w-72 h-96 object-cover rounded-2xl"
+                />
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -6,6 +6,7 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div>
         </div>
       </div>
+
       <div className='container mx-auto px-8'>
         <Navbar />
         <Hero />
@@ -25,6 +27,7 @@ const App = () => {
         <Experience />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

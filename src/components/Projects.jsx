@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <section className="border-b border-neutral-900 pb-16">
+    <section id="projects" className="border-b border-neutral-900 pb-16">
       <motion.h2
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,6 @@ const Projects = () => {
             viewport={{ once: true }}
             className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-center"
           >
-            {/* Project Image */}
             <div className="w-full lg:w-2/5">
               <div className="overflow-hidden rounded-2xl border border-neutral-800 shadow-lg">
                 <img
@@ -36,7 +35,6 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Project Content */}
             <div className="w-full lg:w-3/5 max-w-2xl">
               <h3 className="mb-4 text-2xl font-semibold bg-gradient-to-r from-pink-300 via-slate-400 to-purple-500 bg-clip-text text-transparent">
                 {project.title}
@@ -46,7 +44,6 @@ const Projects = () => {
                 {project.description}
               </p>
 
-              {/* Tech Stack */}
               <div className="flex flex-wrap gap-2">
                 {Array.isArray(project.technologies) &&
                   project.technologies.map((tech, techIndex) => (
