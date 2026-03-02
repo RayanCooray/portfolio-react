@@ -225,7 +225,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "30/9 Fonseka Place,Kalutara North",
+  // address: "30/9 Fonseka Place,Kalutara North",
   phoneNo: "+94 71 367 1979 ",
   email: "raycooray32@gmail.com",
 };
