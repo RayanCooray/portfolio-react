@@ -1,65 +1,68 @@
-
 import { PROJECTS } from "../contstants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <section className="border-b border-neutral-900 pb-16">
       <motion.h2
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl"
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="my-20 text-center text-4xl font-bold tracking-tight"
       >
         Projects
       </motion.h2>
-      <div>
+
+      <div className="space-y-20">
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-16">
-            {" "}
-            {/* Increased margin-bottom for spacing */}
-            <div className="flex flex-wrap lg:justify-center">
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1 }}
-                className="w-full lg:w-1/4"
-              >
+          <motion.div
+            key={project.title || index}
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-center"
+          >
+            {/* Project Image */}
+            <div className="w-full lg:w-2/5">
+              <div className="overflow-hidden rounded-2xl border border-neutral-800 shadow-lg">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="mb-6 rounded"
-                  width={150}
-                  height={150}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                 />
-              </motion.div>
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 100 }}
-                transition={{ duration: 1 }}
-                className="w-full max-w-xl lg:w-3/4"
-              >
-                <h6 className="text-2xl my-8 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 text-transparent bg-clip-text font-semibold">
-                  {project.title}
-                </h6>
-                <p className="mb-4 text-neutral-400">{project.description}</p>
-                <div className="flex flex-wrap gap-3">
-                  {Array.isArray(project.technologies) &&
-                    project.technologies.map((technology, index) => (
-                      <span
-                        key={index}
-                        className="rounded bg-neutral-900 px-3 py-2 text-sm font-medium text-gray-50"
-                      >
-                        {technology}
-                      </span>
-                    ))}
-                </div>
-              </motion.div>
+              </div>
             </div>
-          </div>
+
+            {/* Project Content */}
+            <div className="w-full lg:w-3/5 max-w-2xl">
+              <h3 className="mb-4 text-2xl font-semibold bg-gradient-to-r from-pink-300 via-slate-400 to-purple-500 bg-clip-text text-transparent">
+                {project.title}
+              </h3>
+
+              <p className="mb-6 leading-relaxed text-neutral-400">
+                {project.description}
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2">
+                {Array.isArray(project.technologies) &&
+                  project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-1.5 text-xs font-medium text-gray-200 hover:bg-neutral-800 transition"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+              </div>
+            </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
