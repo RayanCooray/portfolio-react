@@ -25,7 +25,7 @@ const Hero = () => {
               custom={0}
               className="text-purple-400 font-medium tracking-widest uppercase text-sm mb-4"
             >
-              Associate Software Engineer
+               Software Engineer
             </motion.p>
 
             <motion.h1
